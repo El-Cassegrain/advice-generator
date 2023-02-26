@@ -1,0 +1,31 @@
+@import "variables";
+
+/* Small reset */
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Global styles */
+body {
+    font-size: 28px;
+    font-family: $main-font;
+    font-weight: 800;
+    background-color: $dark-blue;
+    color: $light;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    color: $light;
+    padding: 12px 10px;
+    a {
+        color: $light;
+    }
+}

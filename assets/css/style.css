@@ -1,0 +1,97 @@
+/* Variables */
+/* Small reset */
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: hsl(218deg, 23%, 16%);
+  color: hsl(193deg, 38%, 86%);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  color: hsl(193deg, 38%, 86%);
+  padding: 12px 10px;
+}
+.attribution a {
+  color: hsl(193deg, 38%, 86%);
+}
+
+/* Main style */
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container section#quote {
+  background-color: hsl(217deg, 19%, 24%);
+  width: 90%;
+  max-width: 680px;
+  border-radius: 12px;
+  position: relative;
+}
+.container section#quote blockquote {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+.container section#quote blockquote #cite {
+  display: flex;
+  color: hsl(150deg, 100%, 66%);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  width: 100%;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 32px 12px;
+}
+.container section#quote .sep {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 68px;
+}
+
+#sep-desktop {
+  display: none;
+}
+
+button {
+  width: 70px;
+  position: absolute;
+  height: 70px;
+  border-radius: 200px;
+  border: none;
+  background-color: hsl(150deg, 100%, 66%);
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+button:hover, button:focus {
+  box-shadow: 0 0 18px 2px rgba(82, 255, 168, 0.85);
+}
+
+@media screen and (min-width: 768px) {
+  #sep-mobile {
+    display: none;
+  }
+  #sep-desktop {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
